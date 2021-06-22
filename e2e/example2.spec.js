@@ -1,7 +1,13 @@
-import {element, by} from 'detox';
+import {device, element, by} from 'detox';
 
-describe('Example Test', () => {
-  it('has no coffee', async () => {
-    await expect(element(by.text('Pizza'))).toBeVisible();
-  });
+beforeEach(async () => {
+  await device.launchApp();
 });
+
+for (let index = 0; index < 20; index++) {
+  describe('Example Test', () => {
+    it('has no coffee', async () => {
+      await expect(element(by.text('Pizza'))).toBeVisible();
+    });
+  });
+}
