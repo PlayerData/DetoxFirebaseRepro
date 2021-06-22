@@ -46,10 +46,10 @@ const App = () => {
   const refreshData = async () => {
     setLoading(true);
 
-    await awaitTime(200);
+    await awaitTime(1000);
     setData(DATA);
 
-    await awaitTime(200);
+    await awaitTime(1000);
     setLoading(false);
   };
 
