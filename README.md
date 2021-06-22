@@ -1,7 +1,9 @@
-Demonstrates an issue with Detox hanging when using `refreshing` on `SectionList`.
+Demonstrates an issue with Detox and RNFirebase.
 
-Although a `SectionList` has been used here, I believe this also affects `ScrollView`s
-and `FlatList`s with a `refreshControl`.
+You will need to setup a Firebase project, add an iOS app, and add `GoogleService-Info.plist`
+to `ios/GoogleService-Info.plist`.
+
+Then:
 
 ```sh
 yarn install
